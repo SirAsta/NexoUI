@@ -26753,7 +26753,7 @@ local ad=ab.Tween
 
 function aa.New(ae,af,ag,ah,ai,aj,ak,al)
 ah=ah or"Primary"
-local am=al or(not ak and 10 or 999)
+local am=al or(not ak and 3 or 999)
 local an
 if af and af~=""then
 an=ac("ImageLabel",{
@@ -30793,7 +30793,7 @@ local as=ar and ap.MirroredId or ap.Id
 return as,ap.Size,Vector2.new((aq%ap.Cols)*ap.Size.X,math.floor(aq/ap.Cols)*ap.Size.Y)
 end
 
-local an=12
+local an=3
 local ao
 if ag and ag~=""then
 ao=ac("ImageLabel",{
@@ -31522,7 +31522,7 @@ ParentConfig=ak,
 Tags=ak.Tags,
 }
 
-al.UIElements.SliderIcon=ae.NewRoundFrame(99,"Squircle",{
+al.UIElements.SliderIcon=ae.NewRoundFrame(3,"Squircle",{
 ImageTransparency=0.95,
 Size=UDim2.new(1,not al.IsTextbox and-aw or(-al.TextBoxWidth-8),0,4),
 AnchorPoint=Vector2.new(0.5,0.5),
@@ -31532,7 +31532,7 @@ ThemeTag={
 ImageColor3="Text",
 },
 },{
-ae.NewRoundFrame(99,"Squircle",{
+ae.NewRoundFrame(3,"Squircle",{
 Name="Frame",
 Size=UDim2.new(ar,0,1,0),
 ImageTransparency=0.1,
@@ -31540,7 +31540,7 @@ ThemeTag={
 ImageColor3="Slider",
 },
 },{
-ae.NewRoundFrame(99,"Squircle",{
+ae.NewRoundFrame(3,"Squircle",{
 Size=UDim2.new(
 0,
 ak.Window.NewElements and(al.ThumbSize*2)or(al.ThumbSize+2),

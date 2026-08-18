@@ -118,7 +118,7 @@ function Element:New(Config)
 		Tags = Config.Tags,
 	})
 
-	Slider.UIElements.SliderIcon = Creator.NewRoundFrame(4, "Squircle", {
+	Slider.UIElements.SliderIcon = Creator.NewRoundFrame(3, "Squircle", {
 		ImageTransparency = 0.95,
 		Size = UDim2.new(1, not Slider.IsTextbox and -TotalSliderWidth or (-Slider.TextBoxWidth - 8), 0, 4),
 		AnchorPoint = Vector2.new(0.5, 0.5),
@@ -128,7 +128,7 @@ function Element:New(Config)
 			ImageColor3 = "Text",
 		},
 	}, {
-		Creator.NewRoundFrame(4, "Squircle", {
+		Creator.NewRoundFrame(3, "Squircle", {
 			Name = "Frame",
 			Size = UDim2.new(delta, 0, 1, 0),
 			ImageTransparency = 0.1,
@@ -136,7 +136,7 @@ function Element:New(Config)
 				ImageColor3 = "Slider",
 			},
 		}, {
-			Creator.NewRoundFrame(4, "Squircle", {
+			Creator.NewRoundFrame(3, "Squircle", {
 				Size = UDim2.new(
 					0,
 					Config.Window.NewElements and (Slider.ThumbSize * 2) or (Slider.ThumbSize + 2),

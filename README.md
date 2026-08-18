@@ -9,7 +9,7 @@
 
 ## Credits
 
-#### Icons (https://github.com/SirAsta/Icons)
+#### Icons (https://github.com/Footagesus/Icons)
 
 - [Lucide-Icons](https://github.com/lucide-icons/lucide)
 - [Craft Icons](https://www.figma.com/community/file/1415718327120418204)

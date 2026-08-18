@@ -109,8 +109,6 @@ local Window = NexoUI:CreateWindow({
 -- */  Tags  /* --
 do
 	Window:Tag({
-		Title = "v" .. NexoUI.Version,
-		Icon = "github",
 		Color = Color3.fromHex("#1c1c1c"),
 		Border = true,
 	})

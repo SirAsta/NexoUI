@@ -41,7 +41,7 @@ function Toggle.New(Value, Icon, IconSize, Parent, Callback, NewElement, Config)
 		return Id, S.Size, Vector2.new((Frame % S.Cols) * S.Size.X, math.floor(Frame / S.Cols) * S.Size.Y)
 	end
 
-	local Radius = 24 / 2
+	local Radius = 16 / 2
 	local IconToggleFrame
 	if Icon and Icon ~= "" then
 		IconToggleFrame = New("ImageLabel", {

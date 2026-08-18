@@ -52,7 +52,6 @@ local Window = NexoUI:CreateWindow({
 })
 
 Window:Tag({
-	Title = "v1.6.64-fix",
 	Color = "ElementBackground",
 })
 

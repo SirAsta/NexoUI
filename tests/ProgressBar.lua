@@ -1,6 +1,6 @@
-local WindUI = require("../src/Init")
+local NexoUI = require("../src/Init")
 
-local Window = WindUI:CreateWindow({
+local Window = NexoUI:CreateWindow({
 	Title = "ProgressBar Test",
 })
 

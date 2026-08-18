@@ -52,7 +52,7 @@ return function(Config)
 
 		ToggleKey = Config.ToggleKey,
 		ElementsRadius = Config.ElementsRadius,
-		Radius = Config.Radius or 16,
+		Radius = Config.Radius or 3,
 		Transparent = Config.Transparent or false,
 		HideSearchBar = Config.HideSearchBar ~= false,
 		ScrollBarEnabled = Config.ScrollBarEnabled or false,

@@ -37281,7 +37281,7 @@ TopBarButtonIconSize=av.TopBarButtonIconSize,
 
 ToggleKey=av.ToggleKey,
 ElementsRadius=av.ElementsRadius,
-Radius=av.Radius or 3,
+Radius=av.Radius or 12,
 Transparent=av.Transparent or false,
 HideSearchBar=av.HideSearchBar~=false,
 ScrollBarEnabled=av.ScrollBarEnabled or false,
@@ -37336,7 +37336,7 @@ aw.TopBarButtonIconSize=aw.TopBarButtonIconSize or(aw.Topbar.ButtonsType=="Mac"a
 
 aw.ElementConfig={
 UIPadding=(aw.NewElements and 10 or 13),
-UICorner=aw.ElementsRadius or 3,
+UICorner=aw.ElementsRadius or 12,
 }
 
 local ax=aw.Size or UDim2.new(0,580,0,460)

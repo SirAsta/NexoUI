@@ -52,7 +52,7 @@ return function(Config)
 
 		ToggleKey = Config.ToggleKey,
 		ElementsRadius = Config.ElementsRadius,
-		Radius = Config.Radius or 3,
+		Radius = Config.Radius or 12,
 		Transparent = Config.Transparent or false,
 		HideSearchBar = Config.HideSearchBar ~= false,
 		ScrollBarEnabled = Config.ScrollBarEnabled or false,
@@ -107,7 +107,7 @@ return function(Config)
 
 	Window.ElementConfig = {
 		UIPadding = (Window.NewElements and 10 or 13),
-		UICorner = Window.ElementsRadius or 3,
+		UICorner = Window.ElementsRadius or 12,
 	}
 
 	local WindowSize = Window.Size or UDim2.new(0, 580, 0, 460)

@@ -5,6 +5,7 @@
 A modern, open-source **Roblox UI Library** built for script hubs inspired by [WindUI](https://github.com/Footagesus/WindUI).
 
 **v0.0.7** · **MIT License** · [GitHub](https://github.com/SirAsta/NexoUI)
+the readme is basically ai slop tbf im not writing one
 
 </div>
 

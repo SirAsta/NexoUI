@@ -1,8 +1,8 @@
 <div align="center">
 
-# ⚡ NexoUI
+# Ouu shi
 
-A modern, open-source **Roblox UI Library** built for script hubs — inspired by [WindUI](https://github.com/Footagesus/WindUI).
+A modern, open-source **Roblox UI Library** built for script hubs inspired by [WindUI](https://github.com/Footagesus/WindUI).
 
 **v0.0.7** · **MIT License** · [GitHub](https://github.com/SirAsta/NexoUI)
 

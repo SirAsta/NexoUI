@@ -3,7 +3,7 @@
 return [[
 {
     "name": "nexoui",
-    "version": "0.0.7",
+    "version": "0.0.10",
     "main": "./dist/main.lua",
     "repository": "https://github.com/SirAsta/NexoUI",
     "author": "SirAsta",

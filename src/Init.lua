@@ -12,7 +12,7 @@ local NexoUI = {
 	UIScale = 1,
 
 	ConfigManager = nil,
-	Version = "0.0.7",
+	Version = "0.0.10",
 
 	Services = require("./utils/services/Init"),
 

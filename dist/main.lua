@@ -4,7 +4,7 @@
     | |/ |/ / / _ \/ _  / /_/ // /  
     |__/|__/_/_//_/\_,_/\____/___/
     
-    v0.0.7  |  2026-08-18  |  Roblox UI Library for scripts
+    v0.0.10  |  2026-08-18  |  Roblox UI Library for scripts
     
     To view the source code, see the `src/` folder on the official GitHub repository.
     
@@ -26717,7 +26717,7 @@ New=a.p().New
 return[[
 {
     "name": "nexoui",
-    "version": "0.0.7",
+    "version": "0.0.10",
     "main": "./dist/main.lua",
     "repository": "https://github.com/SirAsta/NexoUI",
     "author": "SirAsta",
@@ -39464,7 +39464,7 @@ TransparencyValue=0.15,
 UIScale=1,
 
 ConfigManager=nil,
-Version="0.0.7",
+Version="0.0.10",
 
 Services=a.q(),
 

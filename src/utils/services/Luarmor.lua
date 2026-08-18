@@ -6,7 +6,7 @@
 
 local Luarmor = {}
 
-function Luarmor.New(scriptId, discord)
+function Luarmor.New(scriptId, inviteUrl)
 	local APIURL = "https://sdkapi-public.luarmor.net/library.lua"
 
 	local API = loadstring(game.HttpGet and game:HttpGet(APIURL) or HttpService:GetAsync(APIURL))()
@@ -30,7 +30,7 @@ function Luarmor.New(scriptId, discord)
 	end
 
 	function CopyLink()
-		fsetclipboard(tostring(discord))
+		fsetclipboard(tostring(inviteUrl))
 	end
 
 	return {

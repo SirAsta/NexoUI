@@ -6,7 +6,6 @@ return [[
     "version": "1.6.66",
     "main": "./dist/main.lua",
     "repository": "https://github.com/SirAsta/NexoUI",
-    "discord": "https://discord.gg/ftgs-development-hub-1300692552005189632",
     "author": "SirAsta",
     "description": "Roblox UI Library for scripts",
     "license": "MIT",

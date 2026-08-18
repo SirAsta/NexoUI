@@ -98,7 +98,7 @@ return function(Config)
 		ThumbnailFrame = Creator.Image(
 			Element.Thumbnail,
 			Element.Title,
-			Config.Window.NewElements and Element.UICorner - 11 or (Element.UICorner - 4),
+			Element.UICorner,
 			Config.Window.Folder,
 			"Thumbnail",
 			false,
@@ -110,7 +110,7 @@ return function(Config)
 		ImageFrame = Creator.Image(
 			Element.Image,
 			Element.Title,
-			Config.Window.NewElements and Element.UICorner - 11 or (Element.UICorner - 4),
+			Element.UICorner,
 			Config.Window.Folder,
 			"Image",
 			Element.IconThemed,
@@ -530,7 +530,7 @@ return function(Config)
 				ThumbnailFrame = Creator.Image(
 					newThumbnail,
 					Element.Title,
-					Element.UICorner - 3,
+					Element.UICorner,
 					Config.Window.Folder,
 					"Thumbnail",
 					false,
@@ -552,7 +552,7 @@ return function(Config)
 				ThumbnailFrame = Creator.Image(
 					newThumbnail,
 					Element.Title,
-					Element.UICorner - 3,
+					Element.UICorner,
 					Config.Window.Folder,
 					"Thumbnail",
 					false,
@@ -586,7 +586,7 @@ return function(Config)
 			ImageFrame = Creator.Image(
 				newImage,
 				newImage,
-				Element.UICorner - 3,
+				Element.UICorner,
 				Config.Window.Folder,
 				"Image",
 				not Element.Color and true or false

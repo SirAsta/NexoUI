@@ -107,7 +107,7 @@ return function(Config)
 
 	Window.ElementConfig = {
 		UIPadding = (Window.NewElements and 10 or 13),
-		UICorner = Window.ElementsRadius or (Window.NewElements and 23 or 16),
+		UICorner = Window.ElementsRadius or 3,
 	}
 
 	local WindowSize = Window.Size or UDim2.new(0, 580, 0, 460)

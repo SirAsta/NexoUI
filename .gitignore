@@ -29,3 +29,11 @@ build/.init.lua
 *.njsproj
 *.sln
 *.sw?
+# Backup / temp files
+*.bak
+*.tmp
+*~
+
+# Build tool cache
+.cache/darklua
+.cache/*.zip

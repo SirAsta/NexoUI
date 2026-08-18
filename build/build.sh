@@ -26,6 +26,46 @@ fi
 
 OUTPUT="dist/main.lua"
 CONFIG="build/darklua.dev.config.json"
+# ---------------------------------------------------------------------------
+# darklua bootstrap — ensure a darklua binary is available.
+# If it's not on PATH, download a prebuilt binary for the host OS/arch.
+# ---------------------------------------------------------------------------
+DARKLUA_REPO="seaofvoices/darklua"
+DARKLUA_VERSION="v0.19.0"
+
+if ! command -v darklua >/dev/null 2>&1; then
+	DARKLUA_BIN=".cache/darklua"
+	mkdir -p "$(dirname "$DARKLUA_BIN")"
+
+	if [ -x "$DARKLUA_BIN" ] && "$DARKLUA_BIN" --version >/dev/null 2>&1; then
+		export PATH="$(pwd)/.cache:$PATH"
+	else
+		# Detect host OS / arch
+		OS="$(uname -s | tr '[:upper:]' '[:lower:]')"
+		ARCH="$(uname -m)"
+		case "$ARCH" in
+			x86_64|amd64) ARCH="x86_64" ;;
+			aarch64|arm64) ARCH="aarch64" ;;
+			*) echo "Unsupported architecture for darklua auto-download: $ARCH"; exit 1 ;;
+		esac
+
+		case "$OS" in
+			linux)   DARKLUA_FILE="darklua-linux-$ARCH.zip" ;;
+			darwin)  DARKLUA_FILE="darklua-macos-$ARCH.zip" ;;
+			mingw*|msys*|cygwin*) DARKLUA_FILE="darklua-windows-$ARCH.zip" ;;
+			*) echo "Unsupported OS for darklua auto-download: $OS"; exit 1 ;;
+		esac
+
+		URL="https://github.com/$DARKLUA_REPO/releases/download/$DARKLUA_VERSION/$DARKLUA_FILE"
+		echo -e "${D}[ > ]${R} darklua not found — downloading ${DARKLUA_FILE} ..."
+		command -v curl >/dev/null 2>&1 || { echo "curl is required to download darklua"; exit 1; }
+		curl -sL "$URL" -o /tmp/darklua-nexoui.zip \
+			&& unzip -o -q /tmp/darklua-nexoui.zip -d "$(pwd)/.cache" \
+			&& chmod +x "$DARKLUA_BIN" \
+			|| { echo "Failed to download darklua from $URL"; exit 1; }
+		export PATH="$(pwd)/.cache:$PATH"
+	fi
+fi
 
 PKG=$(node -e "const p=require('./package.json');console.log(JSON.stringify({v:p.version||'',d:p.description||'',r:p.repository||'',s:p.discord||'',l:p.license||''}))")
 

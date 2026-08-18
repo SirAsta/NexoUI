@@ -227,7 +227,7 @@ Tab:Toggle({
 	Title = "Toggle",
 	Desc = "A toggle",
 	Type = "Toggle",                  -- or "Checkbox"
-	Default = true,                   -- initial value (use with Flag)
+	Value = true,                     -- initial value (use with Flag)
 	Locked = false,
 	Callback = function(value)
 		print("Toggled:", value)
@@ -269,7 +269,7 @@ Tab:Dropdown({
 	Multi = false,                    -- allow multiple selections
 	Values = { "A", "B", "C" },
 	-- Values = { { Title = "Copy", Icon = "copy", Desc = "...", Callback = function() end } }
-	Default = "A",
+	Value = "A",                      -- selected value
 	Callback = function(value) print(value) end,
 })
 ```
@@ -281,6 +281,7 @@ Tab:Input({
 	Title = "Input",
 	Desc = "Type here",
 	Type = "Input",                   -- or "Textarea"
+	InputIcon = "search",             -- optional leading icon
 	Placeholder = "Enter text...",
 	ClearOnFocus = true,
 	Value = "hello",

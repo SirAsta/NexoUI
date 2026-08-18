@@ -30794,7 +30794,7 @@ local as=ar and ap.MirroredId or ap.Id
 return as,ap.Size,Vector2.new((aq%ap.Cols)*ap.Size.X,math.floor(aq/ap.Cols)*ap.Size.Y)
 end
 
-local an=3
+local an=12
 local ao
 if ag and ag~=""then
 ao=ac("ImageLabel",{
